@@ -1,7 +1,7 @@
 import {Routes} from '@angular/router';
 
 // import {HomeComponent} from './user';
-import {UserComponent, RoleComponent} from './sys';
+import {UserComponent, RoleComponent, RoleUserComponent} from './sys';
 import {ShopComponent} from './shop';
 
 export const rootRouterConfig: Routes = [
@@ -21,5 +21,9 @@ export const rootRouterConfig: Routes = [
   {
     path: 'role',
     component: RoleComponent,
+  },
+  {
+    path: 'roleUser/:id',
+    component: RoleUserComponent,
   }
 ];

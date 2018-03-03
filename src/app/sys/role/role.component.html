@@ -1,0 +1,30 @@
+<nz-table #nzTable [nzDataSource]="data" [nzPageSize]="10">
+  <thead nz-thead>
+  <tr>
+    <th>
+      <span>ID</span>
+    </th>
+    <th nz-th>
+      <span>角色名称</span>
+    </th>
+    <th nz-th>
+      <span>组员</span>
+    </th>
+    <th nz-th>
+      <span>操作</span>
+    </th>
+  </tr>
+  </thead>
+  <tbody nz-tbody>
+  <tr nz-tbody-tr *ngFor="let data of nzTable.data">
+    <td nz-td>{{data.id}}</td>
+    <td nz-td>
+      <a>{{data.name}}</a>
+    </td>
+    <td nz-td>
+      <span *ngFor="let item of data.list;let i=index">{{item.name}} <span *ngIf="i!=data.list.length-1">、</span></span>
+    </td>
+    <td nz-td><button nz-button [nzType]="'primary'" [routerLink]=" ['/roleUser',data.id]">组员管理</button></td>
+  </tr>
+  </tbody>
+</nz-table>

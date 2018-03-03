@@ -8,7 +8,7 @@
       <span>ID</span>
     </th>
     <th nz-th>
-      <span>Name</span>
+      <span>姓名</span>
       <nz-table-sort [(nzValue)]="sortMap.name" (nzValueChange)="sort('name',$event)"></nz-table-sort>
       <nz-dropdown [nzTrigger]="'click'">
         <i class="anticon anticon-filter" nz-dropdown></i>
@@ -26,11 +26,11 @@
       </nz-dropdown>
     </th>
     <th nz-th>
-      <span>Age</span>
+      <span>年龄</span>
       <nz-table-sort [(nzValue)]="sortMap.age" (nzValueChange)="sort('age',$event)"></nz-table-sort>
     </th>
     <th nz-th>
-      <span>Address</span>
+      <span>地址</span>
       <nz-table-sort [(nzValue)]="sortMap.address" (nzValueChange)="sort('address',$event)"></nz-table-sort>
       <nz-dropdown [nzTrigger]="'click'">
         <i class="anticon anticon-filter" nz-dropdown></i>
