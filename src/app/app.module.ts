@@ -8,12 +8,13 @@ import {HttpModule} from '@angular/http';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
 import {rootRouterConfig} from './app.routes';
 import {AppComponent} from './app.component';
-import {HomeComponent} from './home';
+import {HomeComponent} from './user';
+import {UserComponent, RoleComponent} from './sys';
 import {ShopComponent} from './shop';
 
 @NgModule({
   declarations: [
-    AppComponent, HomeComponent, ShopComponent
+    AppComponent, HomeComponent, ShopComponent, UserComponent, RoleComponent
   ],
   imports: [
     BrowserModule,
